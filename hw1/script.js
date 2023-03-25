@@ -23,8 +23,8 @@ console.log('a'==='a');
 і вирахувати ціну з отриманою знижкою, товара який коштує 12999.  
 Значення розрахунку вивести в консоль*/
 
-let discount = parseInt(prompt("Enter the discount amount: "));
+let discount = parseInt(prompt("Enter the discount amount in %: "));
 let price = 12999;
 
-let discPrice = price - discount;
-console.log(discPrice);
+let discPrice = ((price/100)*discount);
+console.log("Розмір знижки складає: ", discPrice);
