@@ -53,10 +53,10 @@ window.onload = () => {
         for(let item of productInfo) {
             let cardInfo = document.createElement('div');
                 cardInfo.className = 'card';
-                cardInfo.innerHTML = item;
+                cardInfo.innerHTML = `Name: ${item.name}; Price: ${item.price}; Color: ${item.color}`;
             productList.appendChild(cardInfo);
         }
-        return productList;
+       document.body.appendChild(productList);
     }
     productCard(productInfo);
 }
