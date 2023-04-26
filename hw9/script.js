@@ -69,6 +69,8 @@ function addProduct() {
     let productPrice = document.querySelector(".productPrice");
 
     let productInfo = new Product (productName.value, productPrice.value);
+    productName.value = "";
+    productPrice.value = "";
     productArr.push(productInfo);
     console.log(productArr);
 
@@ -95,6 +97,7 @@ let addToListBtn = document.querySelector('.buy-btn');
 function addToList() {
     let inputElement = document.querySelector('.product-input');
     let inputElementVal = inputElement.value;
+    inputElement.value = "";
     let todayDate = new Date();
     let infoDiv = document.createElement('div');
     infoDiv.className = 'info-div';
@@ -108,7 +111,9 @@ function addToList() {
     clickBtn.onclick = () => {
         infoDiv.style.background = 'grey';
     };
+    
 }
+
 addToListBtn.addEventListener('click', addToList);
 
 
