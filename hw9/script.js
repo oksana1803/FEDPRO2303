@@ -22,7 +22,8 @@ function makeDiv() {
     firstTask.appendChild(divEl);
 
     let allBtn = document.querySelector(".buttons");
-    if(counter >= 5) {
+    let remBtn = document.querySelector(".removeBtn");
+    if(counter >= 5 && remBtn === null) {
         let removeDivBtn = document.createElement('button');
         removeDivBtn.className = 'removeBtn';
         removeDivBtn.innerHTML = 'div remover';
@@ -73,8 +74,8 @@ function addProduct() {
     productPrice.value = "";
     productArr.push(productInfo);
     console.log(productArr);
-
-    if(productArr.length > 3) {
+    let drawBtn = document.querySelector('.draw');
+    if(productArr.length > 3 && drawBtn === null) {
         let secondTask = document.querySelector(".secondTask");
         let productListBtn = document.createElement('button');
         productListBtn.className = 'draw';
@@ -82,6 +83,7 @@ function addProduct() {
         secondTask.appendChild(productListBtn);
         productListBtn.addEventListener('dblclick', showItems);
     }
+
 }
 
 addBtn.addEventListener('click', addProduct);
