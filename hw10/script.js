@@ -23,19 +23,19 @@ window.onload = () => {
 
     function moveBlock (e) {
         if(e.code === 'ArrowRight') {
-            x = x + xStep;
+            x += xStep;
             secondBlock.style.left = x;
         }
         else if(e.code === 'ArrowDown') {
-            y = y + yStep;
+            y += yStep;
             secondBlock.style.top = y;
         }
         else if(e.code === 'ArrowLeft') {
-            x = x - xStep;
+            x -= xStep;
             secondBlock.style.left = x;
         }
         else if(e.code === 'ArrowUp') {
-            y = y - yStep;
+            y -= yStep;
             secondBlock.style.top = y;
         }
     }
