@@ -22,21 +22,21 @@ window.onload = () => {
     let yStep = 10;
 
     function moveBlock (e) {
-        if(e.code === 'ArrowRight') {
+        if(e.code === 'ArrowRight' && x < 700) {
             x += xStep;
-            secondBlock.style.left = x;
+            secondBlock.style.left = x + 'px';
         }
-        else if(e.code === 'ArrowDown') {
+        else if(e.code === 'ArrowDown' && y < 300) {
             y += yStep;
-            secondBlock.style.top = y;
+            secondBlock.style.top = y + 'px';
         }
-        else if(e.code === 'ArrowLeft') {
+        else if(e.code === 'ArrowLeft' && x > 0) {
             x -= xStep;
-            secondBlock.style.left = x;
+            secondBlock.style.left = x + 'px';
         }
-        else if(e.code === 'ArrowUp') {
+        else if(e.code === 'ArrowUp' && y > 0) {
             y -= yStep;
-            secondBlock.style.top = y;
+            secondBlock.style.top = y + 'px';
         }
     }
     body.addEventListener('keydown', moveBlock);
