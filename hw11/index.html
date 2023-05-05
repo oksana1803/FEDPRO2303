@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <section class="section1">
+        
+        <form class = "authorization" action="">
+            <h1>Authorization</h1>
+            <p>
+                <label id="login" for="login">
+                    Login
+                </label>
+                <input type="text" id="login-data" name="login">
+            </p>
+            <p>
+                <label id="password" for="password-data">Password</label>
+                <input type="password" name="login-passord" id="password-data">
+            </p>
+            <input class="submit-input" type="submit" value="Login" disabled>
+        </form>
+
+        <form class="pizzaOption">
+            <div class="pizzaSize">
+                <h1>Choose your size</h1>
+            <div>
+                <div>
+                    <label for="smallSize" id="size-inp">S</label>
+                    <input type="radio" name="size">
+                </div>
+                <div>
+                    <label for="mediumSize" id="size-inp">M</label>
+                    <input type="radio" name="size">
+                </div>
+                <div>
+                    <label for="largeSize" id="size-inp">L</label>
+                    <input type="radio" name="size">
+                </div>
+            </div>
+            <div class="menu">
+                    <div class="pizza-menu">
+                        <h1>Menu</h1>
+                        <div>
+                            <label for="firstPizza">Hawaiian Pizza</label>
+                            <input type="radio" name="pizza" class="firstPizza">
+                        </div>
+                        <div>
+                            <label for="secondPizza">Cheese Pizza</label>
+                            <input type="radio" name="pizza" class="secondPizza">
+                        </div>
+                        <div>
+                            <label for="thirdPizza">Carbonara Pizza</label>
+                            <input type="radio" name="pizza" class="thirdPizza">
+                        </div>
+                        <div>
+                            <label for="fourthPizza">Margherita Pizza</label>
+                            <input type="radio" name="pizza" class="fourthPizza">
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

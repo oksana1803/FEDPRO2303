@@ -1,0 +1,20 @@
+.section1 {
+    text-align: center;
+}
+#login, #password {
+    font-size: 25px;
+}
+#login-data, #password-data {
+    font-size: 25px;
+}
+.submit-input {
+    background: orange;
+    width: 90px;
+    height: 40px;
+}
+/* .pizzaOption{
+    display: none;
+} */
+#size-inp {
+    font-size: 25px;
+}
