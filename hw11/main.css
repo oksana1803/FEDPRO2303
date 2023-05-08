@@ -1,5 +1,9 @@
 .section1 {
     text-align: center;
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 #login, #password {
     font-size: 25px;
@@ -12,9 +16,9 @@
     width: 90px;
     height: 40px;
 }
-/* .pizzaOption{
+.pizzaOption{
     display: none;
-} */
-#size-inp {
+}
+.rad-inp, .form-check-label, .pizza  {
     font-size: 25px;
 }

@@ -27,44 +27,64 @@
         </form>
 
         <form class="pizzaOption">
+            <div class="pizzaMenu">
+                <h1>Pizza Option</h1>
+                <div class="container">
+                    <div class="hawaii">
+                        <label for="pizzaOne" class="pizza">Hawaiian Pizza</label>
+                        <input type="radio" id="pizzaOne" name="pizza" value="Hawaii">
+                    </div>
+                    <div class="cheese">
+                        <label for="pizzaTwo" class="pizza">Cheese Pizza</label>
+                        <input type="radio" id="pizzaTwo" name="pizza" value="Cheese">
+                    </div>
+                    <div class="margherita">
+                        <label for="pizzaThree" class="pizza">Margherita Pizza</label>
+                        <input type="radio" id="pizzaThree" name="pizza" value="Margherita">
+                    </div>
+                    <div class="carbonara">
+                        <label for="pizzaFour" class="pizza">Carbonara Pizza</label>
+                        <input type="radio" id="pizzaFour" name="pizza" value="Carbonara">
+                    </div>  
+                </div>
+            </div>
             <div class="pizzaSize">
                 <h1>Choose your size</h1>
-            <div>
-                <div>
-                    <label for="smallSize" id="size-inp">S</label>
-                    <input type="radio" name="size">
-                </div>
-                <div>
-                    <label for="mediumSize" id="size-inp">M</label>
-                    <input type="radio" name="size">
-                </div>
-                <div>
-                    <label for="largeSize" id="size-inp">L</label>
-                    <input type="radio" name="size">
+                <div class="sizePizza">
+                        <label for="sizeS" class="rad-inp">S</label>
+                        <input type="radio" class="S" name="size" >
+                       </div>
+                       <div>
+                        <label for="sizeM" class="rad-inp">M</label>
+                        <input type="radio" class="M" name="size">
+                       </div>
+                       <div>
+                        <label for="sizeL" class="rad-inp">L</label>
+                        <input type="radio" class="L" name="size">
+                       </div>
+            </div>
+            <div class="extra">
+                <form>
+                    <h1>Add extra</h1>
+                    <input class="form-check-input" type="checkbox" id="onion" value="10">
+                    <label class="form-check-label" for="onion">Onion 5 UAH</label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" id="pineapple" value="20">
+                    <label class="form-check-label" for="pineapple">Pineapple 7 UAH</label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" id="cheese" value="20">
+                    <label class="form-check-label" for="cheese">Сheese 5 UAH</label>
+                    <br>
+                    <input class="form-check-input" type="checkbox" id="olives" value="15">
+                    <label class="form-check-label" for="olives">Olives 7 UAH</label>
+                </form>
+                <div class="pizzaPrice">
+                    <h2>Pizza price: </h2>
                 </div>
             </div>
-            <div class="menu">
-                    <div class="pizza-menu">
-                        <h1>Menu</h1>
-                        <div>
-                            <label for="firstPizza">Hawaiian Pizza</label>
-                            <input type="radio" name="pizza" class="firstPizza">
-                        </div>
-                        <div>
-                            <label for="secondPizza">Cheese Pizza</label>
-                            <input type="radio" name="pizza" class="secondPizza">
-                        </div>
-                        <div>
-                            <label for="thirdPizza">Carbonara Pizza</label>
-                            <input type="radio" name="pizza" class="thirdPizza">
-                        </div>
-                        <div>
-                            <label for="fourthPizza">Margherita Pizza</label>
-                            <input type="radio" name="pizza" class="fourthPizza">
-                        </div>
-                    </div>
-            </div>
+
         </form>
+       
     </section>
 </body>
 </html>
